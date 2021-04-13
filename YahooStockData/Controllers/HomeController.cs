@@ -18,11 +18,20 @@ namespace YahooStockData.Controllers
             _logger = logger;
         }
 
+        public IActionResult Test()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Test(string id)
+        {
+            return Response.Redirect("http://localhost:60545/Forum/");
+        }
         public IActionResult Index()
         {
             return View();
         }
-
+ 
         public IActionResult Privacy()
         {
             return View();
