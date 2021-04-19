@@ -5,9 +5,7 @@
 <%@ Register TagPrefix="YAF" TagName="ForumActiveDiscussion" Src="../controls/ForumActiveDiscussion.ascx" %>
 <%@ Register TagPrefix="YAF" TagName="ForumCategoryList" Src="../controls/ForumCategoryList.ascx" %>
 <%@ Register TagPrefix="YAF" TagName="PollList" Src="../controls/PollList.ascx" %>
-
 <YAF:PageLinks runat="server" ID="PageLinks" />
-
 <div class="row">
     <div class="col">
         <YAF:ForumWelcome runat="server" ID="Welcome" />

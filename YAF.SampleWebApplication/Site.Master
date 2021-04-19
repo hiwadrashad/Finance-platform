@@ -1,7 +1,20 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="YAF.SampleWebApplication.SiteMaster" %>
 
 <!DOCTYPE html>
+<style>
+@import url("fontawesome-free/css/fontawesome-all.min.css");
 
+    .fontclass {
+    
+    font-family:"Font Awesome\ 5 Free"
+    }
+
+    .changecolor {
+    
+    color: whitesmoke !important;
+    background-color: whitesmoke !important;
+    }
+</style>
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
@@ -22,23 +35,22 @@
         </asp:ScriptManager>
         <header>
             <!-- Fixed navbar -->
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a class="navbar-brand" runat="server" href="~/">YAF.NET SampleWebApplication</a>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:darkred; height:65px" >
+                <a class="navbar-brand fontclass" runat="server" href="~/">Finance platform</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Chat">Chat</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Forum/">Forum</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
+                        <li class="nav-item fontclass"><a class="nav-link" runat="server" href="~/">Home</a></li>
+                        <li class="nav-item fontclass"><a class="nav-link" runat="server" href="~/Forum">Forum</a></li>
+                        <li class="nav-item fontclass"><a class="nav-link" runat="server" href="~/">Blog</a></li>
+                        <li class="nav-item fontclass"><a class="nav-link" runat="server" href="~/">Finance</a></li>
                     </ul>
-                    <div class="form-inline mt-2 mt-md-0 text-white">
+                    <%--<div class="form-inline mt-2 mt-md-0 text-white">
                         <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
                             <AnonymousTemplate>
-                                <asp:Button id="LoginLink" runat="server" 
+                                <asp:Button class="changecolor" id="LoginLink" runat="server" 
                                             CssClass="btn btn-outline-success my-2 my-sm-0 mr-sm-2" 
                                             Text="Login"
                                             OnClick="LoginLink_OnClick"></asp:Button>
@@ -55,7 +67,7 @@
                                                  CssClass="btn btn-outline-success my-2 my-sm-0" LogoutPageUrl="~/"/>
                             </LoggedInTemplate>
                         </asp:LoginView>
-                    </div>
+                    </div>--%>
                 </div>
             </nav>
         </header>

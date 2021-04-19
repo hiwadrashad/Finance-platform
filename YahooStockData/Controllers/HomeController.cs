@@ -25,7 +25,8 @@ namespace YahooStockData.Controllers
         [HttpPost]
         public IActionResult Test(string id)
         {
-            return Response.Redirect("http://localhost:60545/Forum/");
+            Response.Redirect("http://localhost:60545/Forum/");
+            return View();
         }
         public IActionResult Index()
         {

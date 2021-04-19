@@ -136,6 +136,7 @@
     <Content Include="Chat.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
+    <Content Include="DataInfo.txt" />
     <Content Include="Default.aspx" />
     <Content Include="error.aspx" />
     <Content Include="favicon.ico" />
