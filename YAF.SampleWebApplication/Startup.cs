@@ -42,6 +42,7 @@ namespace YAF.SampleWebApplication
         public void Configuration(IAppBuilder app)
         {
             app.MapSignalR();
+        
         }
     }
 }

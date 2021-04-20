@@ -1,1 +1,4 @@
-﻿http://localhost:60545/forum/install/default.aspx
+﻿http://localhost:60545/forum/install/default.aspx - forum installation page
+http://localhost:60545/Forum/ - forum
+https://localhost:44312/ - mainpage
+https://localhost:44329/ - finance page

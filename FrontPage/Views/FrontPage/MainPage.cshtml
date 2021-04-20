@@ -1,0 +1,440 @@
+﻿<style>
+    @@import url("fontawesome-free/css/fontawesome-all.min.css");
+
+    @@media screen and (max-width: 1366px) {
+        .assignwidth {
+            width: 130% !important;
+            transform: translate(-10%,-130%) !important;
+        }
+
+        .assignwidth2 {
+            width: 130% !important;
+            transform: translate(-10%,-11%) !important;
+            z-index: 1;
+        }
+
+        .assignwidth3 {
+            width: 130% !important;
+            transform: translate(-10%,-30%) !important;
+            z-index: 2;
+        }
+
+        .assignwidth4 {
+            width: 130% !important;
+            transform: translate(-10%,-35%) !important;
+            z-index: 2;
+        }
+
+        .assignwidth5 {
+            width: 130% !important;
+            transform: translate(-10%,-55%) !important;
+            z-index: 2;
+        }
+    }
+
+    @@media screen and (min-width: 1367px) {
+        .assignwidth {
+            width: 170% !important;
+            transform: translate(-20%,-130%) !important;
+        }
+
+        .assignwidth2 {
+            width: 170% !important;
+            transform: translate(-20%,-11%) !important;
+            z-index: 1;
+        }
+
+        .assignwidth3 {
+            width: 170% !important;
+            transform: translate(-20%,-30%) !important;
+            z-index: 2;
+        }
+
+        .assignwidth4 {
+            width: 170% !important;
+            transform: translate(-20%,-35%) !important;
+            z-index: 2;
+        }
+
+        .assignwidth5 {
+            width: 170% !important;
+            transform: translate(-20%,-55%) !important;
+            z-index: 2;
+        }
+    }
+
+    nav {
+        height: 65px !important;
+        background-color: darkred !important;
+    }
+
+    .fontclass {
+        font-family: "Font Awesome\ 5 Free";
+    }
+</style>
+<html lang="">
+<head>
+    <title>Gleblu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="/MainPage/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+            <a class="navbar-brand fontclass" runat="server" href="~/">Finance platform</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item fontclass"><a class="nav-link" runat="server" href="~/">Home</a></li>
+                    <li class="nav-item fontclass"><a class="nav-link" runat="server" href="~/Forum/">Forum</a></li>
+                    <li class="nav-item fontclass"><a class="nav-link" runat="server" href="~/About">Blog</a></li>
+                    <li class="nav-item fontclass"><a class="nav-link" runat="server" href="~/Contact">Finance</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    @*<div class="wrapper row1 assignwidth2">
+            <header id="header" class="hoc clear">
+                <div id="logo" class="fl_left">
+                    <h1><a href="index.html">Gleblu</a></h1>
+                </div>
+                <nav id="mainav" class="fl_right">
+                    <ul class="clear">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li>
+                            <a class="drop" href="#">Pages</a>
+                            <ul>
+                                <li><a href="pages/gallery.html">Gallery</a></li>
+                                <li><a href="pages/full-width.html">Full Width</a></li>
+                                <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+                                <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+                                <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+                                <li><a href="pages/font-icons.html">Font Icons</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="drop" href="#">Dropdown</a>
+                            <ul>
+                                <li><a href="#">Level 2</a></li>
+                                <li>
+                                    <a class="drop" href="#">Level 2 + Drop</a>
+                                    <ul>
+                                        <li><a href="#">Level 3</a></li>
+                                        <li><a href="#">Level 3</a></li>
+                                        <li><a href="#">Level 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Level 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Link Text</a></li>
+                        <li><a href="#">Link Text</a></li>
+                        <li><a href="#">Link Text</a></li>
+                    </ul>
+                    <form action="#"><select><option selected="selected" value="">MENU</option><option value="index.html">Home</option><option value="#">Pages</option><option value="pages/gallery.html">- - Gallery</option><option value="pages/full-width.html">- - Full Width</option><option value="pages/sidebar-left.html">- - Sidebar Left</option><option value="pages/sidebar-right.html">- - Sidebar Right</option><option value="pages/basic-grid.html">- - Basic Grid</option><option value="pages/font-icons.html">- - Font Icons</option><option value="#">Dropdown</option><option value="#">- - Level 2</option><option value="#">- - Level 2 + Drop</option><option value="#">- - - Level 3</option><option value="#">- - - Level 3</option><option value="#">- - - Level 3</option><option value="#">- - Level 2</option><option value="#">Link Text</option><option value="#">Link Text</option><option value="#">Link Text</option></select></form>
+                </nav>
+            </header>
+        </div>*@
+
+    <div class="wrapper bgded overlay assignwidth2" style="background-image:url('MainPage/images/demo/backgrounds/MainImage.jpg');">
+        <div id="pageintro" class="hoc clear">
+            <article>
+                <h3 class="heading">Finance Platform</h3>
+
+                <footer>
+                    <ul class="nospace inline pushright">
+                        @*<li><a class="btn" href="#">Dictum aenean</a></li>
+                            <li><a class="btn inverse" href="#">Nunc molestie</a></li>*@
+                    </ul>
+                </footer>
+            </article>
+        </div>
+    </div>
+
+    <div class="wrapper row2 assignwidth3">
+        <section id="introblocks" class="hoc container clear">
+            <ul class="nospace group">
+                <li class="one_third first">
+                    <article>
+                        <a href="#"><i class="fas fa-hand-peace"></i></a>
+                        <h6 class="heading underline">Forum</h6>
+                        <p>Go to the discussion platform to discuss all your idea's.</p>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article class="active">
+                        <a href="#"><i class="fas fa-microphone"></i></a>
+                        <h6 class="heading underline">Blog</h6>
+                        <p>Read our blogs to get a quick startup about the latest finance news.</p>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <a href="#"><i class="fas fa-moon"></i></a>
+                        <h6 class="heading underline">Stock information</h6>
+                        <p>Go to our stock information headline to get all the data you need.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="wrapper row3 assignwidth2">
+        <main class="hoc container clear">
+            <div class="center btmspace-80">
+                <h6 class="heading underline font-x2">Latest updates</h6>
+            </div>
+            <ul class="nospace group overview btmspace-80">
+                <li class="one_third">
+                    <article>
+                        <div class="clear">
+                            <a href="#"><i class="fas fa-motorcycle"></i></a>
+                            <h6 class="heading">Speed</h6>
+                        </div>
+                        <p>the latest updates improved the speed of retrieving data for all the financial stock data.</p>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <div class="clear">
+                            <a href="#"><i class="fas fa-newspaper"></i></a>
+                            <h6 class="heading">Readability</h6>
+                        </div>
+                        <p>Say welcome to our new colleague Mark, Mark will help us with improving the websites readability.</p>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <div class="clear">
+                            <a href="#"><i class="fas fa-paper-plane"></i></a>
+                            <h6 class="heading">Travel</h6>
+                        </div>
+                        <p>We will be working on our next sub which will consist of reviewing the hottets vacation destinations.</p>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <div class="clear">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <h6 class="heading">Vision</h6>
+                        </div>
+                        <p>For any ideas and reports, mail admin@gmail.com, we will read your post and try to improve on it.</p>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <div class="clear">
+                            <a href="#"><i class="fas fa-leaf"></i></a>
+                            <h6 class="heading">Nature</h6>
+                        </div>
+                        <p>Thanks to one of our readers, we will donate to the planting of trees whith every 1000 new subcribers.</p>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <div class="clear">
+                            <a href="#"><i class="fas fa-power-off"></i></a>
+                            <h6 class="heading">Finance</h6>
+                        </div>
+                        <p>The initial layout is updated, in which you are able to discuss your ideas, read our blogs and get the latest stock data</p>
+                    </article>
+                </li>
+            </ul>
+            @*<footer class="center"><a class="btn" href="#">Semper ullamcorper</a></footer>*@
+
+            <div class="clear"></div>
+        </main>
+    </div>
+
+    <div class="wrapper row2 assignwidth3">
+        <section class="hoc container clear">
+            <div class="center btmspace-80">
+                <h6 class="heading underline font-x2">Upcoming Blog Posts</h6>
+            </div>
+            <ul class="nospace group">
+                <li class="one_quarter first">
+                    <figure class="fixwidth">
+                        <a class="imgover btmspace-30" href="#"><img src="/MainPage/images/demo/gallery/shortimage1.jpg" alt=""></a>
+                        <figcaption class="bold uppercase center">Machine Learning?</figcaption>
+                    </figure>
+                </li>
+                <li class="one_quarter">
+                    <figure class="fixwidth">
+                        <a class="imgover btmspace-30" href="#"><img src="/MainPage/images/demo/gallery/shortimage2.jpeg" alt=""></a>
+                        <figcaption class="bold uppercase center">How to become financially independant</figcaption>
+                    </figure>
+                </li>
+                <li class="one_quarter">
+                    <figure class="fixwidth">
+                        <a class="imgover btmspace-30" href="#"><img src="/MainPage/images/demo/gallery/shortimage3.jpeg" alt=""></a>
+                        <figcaption class="bold uppercase center">Future for investors</figcaption>
+                    </figure>
+                </li>
+                <li class="one_quarter">
+                    <figure class="fixwidth">
+                        <a class="imgover btmspace-30" href="#"><img src="/MainPage/images/demo/gallery/shortimage4.jpg" alt=""></a>
+                        <figcaption class="bold uppercase center">How to counter work related stress</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="wrapper bgded overlay assignwidth3" style="background-image:url('MainPage/images/demo/backgrounds/BackgroundImage1.jpg');">
+        <section class="hoc container clear">
+            <div class="center btmspace-80">
+                <h6 class="heading underline font-x2">You be the judge</h6>
+            </div>
+            <ul id="testimonials" class="nospace group btmspace-80">
+                <li class="one_half first">
+                    <blockquote>I could not make it without the help from the friendly people here ate the discussion boards!</blockquote>
+                    <figure class="clear">
+                        <img class="circle" src="images/demo/60x60.png" alt="">
+                        <figcaption>
+                            <h6 class="heading">A. Ying</h6>
+                            <em>Quant trader</em>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="one_half">
+                    <blockquote>I love reading the latest blogs, not only to unwind after work but to also learn the latest information regarding my stocks.</blockquote>
+                    <figure class="clear">
+                        <img class="circle" src="images/demo/60x60.png" alt="">
+                        <figcaption>
+                            <h6 class="heading">H. Doe</h6>
+                            <em>Director</em>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <footer class="center">@*<a class="btn" href="#">Phasellus pede mauris</a>*@</footer>
+        </section>
+    </div>
+
+    <div class="wrapper row3 assignwidth4">
+        <section class="hoc container clear">
+            <div class="center btmspace-80">
+                <h6 class="heading underline font-x2">Blog posts</h6>
+            </div>
+            <ul id="latest" class="nospace group">
+                <li class="one_third first">
+                    <article>
+                        <figure><a class="imgover" href="#"><img src="/MainPage/images/demo/gallery/MediumImage1.jpg" alt=""></a></figure>
+                        <div class="excerpt">
+                            <h6 class="heading">Stochastics</h6>
+                            <ul class="nospace meta">
+                                <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+                                <li>
+                                    <i class="far fa-clock rgtspace-5"></i>
+                                    <time datetime="2021-04-06T08:15+00:00">06 Apr 2021</time>
+                                </li>
+                            </ul>
+                            <p>The Stochastics indicator measures the relationship between an asset’s closing price and its price range during a particular period since the closing price of the asset  [<a href="#">…</a>]</p>
+                            <footer>@*<a class="btn" href="#">Read More</a>*@</footer>
+                        </div>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <figure><a class="imgover" href="#"><img src="/MainPage/images/demo/gallery/MediumImage2.jpg" alt=""></a></figure>
+                        <div class="excerpt">
+                            <h6 class="heading">Relative Strength Index (RSI)</h6>
+                            <ul class="nospace meta">
+                                <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+                                <li>
+                                    <i class="far fa-clock rgtspace-5"></i>
+                                    <time datetime="2021-04-05T08:15+00:00">05 Apr 2021</time>
+                                </li>
+                            </ul>
+                            <p>Just like the Stochastics, the Relative Strength Index (RSI) oscillates between the 0 and 100 values. However, the overbought and oversold level are usually set at 70 during an uptrend and 30 during a downtrend. [<a href="#">…</a>]</p>
+                            <footer>@*<a class="btn" href="#">Read More</a>*@</footer>
+                        </div>
+                    </article>
+                </li>
+                <li class="one_third">
+                    <article>
+                        <figure><a class="imgover" href="#"><img src="/MainPage/images/demo/gallery/MediumImage3.png" alt=""></a></figure>
+                        <div class="excerpt">
+                            <h6 class="heading">Commodity Channel Index (CCI)</h6>
+                            <ul class="nospace meta">
+                                <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+                                <li>
+                                    <i class="far fa-clock rgtspace-5"></i>
+                                    <time datetime="2021-04-04T08:15+00:00">04 Apr 2021</time>
+                                </li>
+                            </ul>
+                            <p>The Commodity Channel Index (CCI) has the look and feel of the RSI indicator. But, the underlying mathematical formula, as well as the application is completely different.[<a href="#">…</a>]</p>
+                            <footer>@*<a class="btn" href="#">Read More</a>*@</footer>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="wrapper row4 assignwidth5">
+        <footer id="footer" class="hoc clear">
+            <div class="one_quarter first">
+                <h6 class="heading">Info</h6>
+                <ul class="nospace linklist contact btmspace-30">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <address>
+                            Street Name &amp; Number, Town, Postcode/Zip
+                        </address>
+                    </li>
+                    <li><i class="fas fa-phone"></i> +00 (123) 456 7890</li>
+                    <li><i class="far fa-envelope"></i> info@domain.com</li>
+                </ul>
+                <ul class="faico clear">
+                    <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+                </ul>
+            </div>
+            <div class="one_quarter">
+                <h6 class="heading">Site Maps</h6>
+                <ul class="nospace linklist">
+                    <li>
+                        <article>
+                            <p class="nospace btmspace-10"><a href="#">Blogging model added.</a></p>
+                            <time class="block font-xs" datetime="2021-04-06">Friday, 6<sup>th</sup> April 2021</time>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <p class="nospace btmspace-10"><a href="#">Discussion board implementation.</a></p>
+                            <time class="block font-xs" datetime="2021-04-05">Thursday, 5<sup>th</sup> April 2021</time>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="one_quarter">
+                <h6 class="heading">Sources</h6>
+                <ul class="nospace linklist">
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Interactive brokers</a></li>
+                    <li><a href="#">Yahoo Finance</a></li>
+                    <li><a href="#">Tradeciety</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+
+</body>
+</html>
