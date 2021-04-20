@@ -62,7 +62,7 @@ namespace BloggingCMS
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Blogging}/{action=BloggingOverview}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
